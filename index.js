@@ -24,25 +24,25 @@ switch (day){
 
 
 
-function obtenerImporteConImpuestos(precio,producto) {
-	switch (producto) {
-		case 1:
-		impuesto = Number(21%);
-		break;
+function obtenerImporteConImpuestos(importeSinImpuesto, tipoDeProducto){
+   let tipoDeProducto = prompt("ingrese el tipo de producto");
+   let precio_sin = prompt ("ingrese el valor sin iva");
 
-		case 2:
-		impuesto = Number(10%);
-		break;
+   if (tipoDeProducton == 1){
+       document.write ("valor con iva " + ((precio_sin * 0.21) + precio_sin) );
 
-		case 3:
-		impuesto = Number(05%);
-		break;
 
-		default:
-		break;
-	}
+   }
+   
+   else if (tipoDeProducto == 2){
+       document.write ("valor con iva" + (precio_sin * 0.10) );
+   }
 
-	alert ('Para un importe sin impuestos de ' + precio + ' y tipo de producto ' + producto + ' el resultado del importe con impuestos es de ' + precio*impuesto)
+   else if (tipoDeProducto ==  3){
+       document.write ("valor con iva" + (precio_sin * 0.03) );
+   }
+
+   obtenerImporteConImpuestos();
 
 
 
