@@ -18,7 +18,31 @@ switch (day){
     default
     document.write ("no existe un valor valido para tipo de bomba");
 
-    //outpusts " Mi ejercicio" //
+    //outpusts " Mi ejercicio" 
 
 }
+
+
+
+function obtenerImporteConImpuestos(precio,producto) {
+	switch (producto) {
+		case 1:
+		impuesto = Number(21%);
+		break;
+
+		case 2:
+		impuesto = Number(10%);
+		break;
+
+		case 3:
+		impuesto = Number(05%);
+		break;
+
+		default:
+		break;
+	}
+
+	alert ('Para un importe sin impuestos de ' + precio + ' y tipo de producto ' + producto + ' el resultado del importe con impuestos es de ' + precio*impuesto)
+
+
 
