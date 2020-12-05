@@ -32,17 +32,17 @@ function obtenerImporteConImpuestos(importeSinImpuesto, tipoDeProducto){
    precio_sin = parseInt (precio_sin)
 
    if (tipoDeProducton == 1){
-       document.write ("valor con iva " + ((precio_sin * 0.21) + precio_sin) );
+       document.write ("valor con iva " + ((precio_sin * 121) + precio_sin) );
 
 
    }
    
    else if (tipoDeProducto == 2){
-       document.write ("valor con iva" + (precio_sin * 0.10) );
+       document.write ("valor con iva" + (precio_sin * 110) );
    }
 
    else if (tipoDeProducto ==  3){
-       document.write ("valor con iva" + (precio_sin * 0.5 );
+       document.write ("valor con iva" + (precio_sin * 105);
    }
 
    obtenerImporteConImpuestos();
